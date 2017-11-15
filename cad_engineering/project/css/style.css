@@ -139,8 +139,9 @@ body {
 
 .slider {
   max-width: 1000px;
-  height: 410px;
+  height: 300px;
   border-top: 4px solid #00beff;
+  padding-top: 20px
 }
 
 .slider__wrap {
@@ -503,7 +504,7 @@ div.bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-def
   }
 
   .slider {
-    height: 550px;
+    height: 470px;
   }
 
   .slider__item {
@@ -583,7 +584,7 @@ div.bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-def
   }
 
   .slider {
-    height: 420px;
+    height: 330px;
   }
 
   .slider__text {
@@ -626,6 +627,8 @@ div.bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-def
 
   .slider {
     height: auto;
+    padding-top: 0;
+    border-top: none;
   }
 }
 
