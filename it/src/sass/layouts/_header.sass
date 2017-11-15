@@ -1,0 +1,163 @@
+header
+  width: 100%
+
+  .header
+    position: relative
+    display: flex
+    justify-content: space-between
+    padding-top: 40px
+    padding-bottom: 20px
+
+    &__logo
+      position: relative
+      display: flex
+      justify-content: space-between
+      padding-left: 120px
+      z-index: 10
+
+      &--link
+        position: absolute
+        top: -20px
+        left: 0px
+        width: 100px
+        height: 90px
+        background: url("../images/logo.png") no-repeat
+        cursor: pointer
+
+      &--name
+        @include fonts-settings-logo
+
+    &__contacts
+      display: flex
+      justify-content: space-between
+      @include fonts-settings-h2
+
+      &--item
+        padding-top: 10px
+        padding-left: 70px
+        background: url("../images/sprite.png")
+        background-repeat: no-repeat
+
+      &--tel
+        background-position: 30px -525px
+
+      &--email
+        background-position: 30px -475px
+
+  .nav
+    height: 50px
+    display: flex
+    justify-content: flex-end
+    align-items: center
+
+    &__list
+      display: flex
+
+      &--item
+        position: relative
+        height: 22px
+        padding: 0px 30px
+        border-right: 1px solid #4e2020
+        z-index: 10
+
+        &:last-child
+          padding-right: 5px
+          border-right: none
+
+      &--link
+        text-decoration: none
+        color: #ffffff
+
+        &:hover
+          text-decoration: none
+          padding-bottom: 12px
+          border-bottom: 3px solid #d12c2c
+
+      & .arrow
+        padding-right: 45px
+
+        &::after
+          content: ""
+          position: absolute
+          top: 11px
+          right: 25px
+          border: 5px solid transparent
+          border-top: 5px solid #ffffff
+
+        &:hover .sub-menu
+          display: block
+
+      & .sub-menu
+        position: absolute
+        left: 0px
+        top: 36px
+        display: none
+        width: 200px
+        margin: 0
+        padding: 0
+        list-style: none
+        background: #663333
+
+        &__item
+          margin: 10px 0px
+
+          &--link
+            color: #ffffff
+            margin-left: 30px
+            cursor: pointer
+
+            &:hover
+              border-bottom: 1px solid #d12c2c
+
+  .background__header
+    width: 100%
+    position: relative
+    z-index: 1
+    
+    &--gray
+      position: absolute
+      width: 26%
+      height: 130px
+      background-color: #e6e6e6
+
+    &--maroon
+      position: absolute
+      top: 118px
+      right: 0px
+      width: 26%
+      height: 50px
+      background-color: #663333
+
+  .header__gray
+    position: absolute
+    top: 0px
+    left: 0px
+    width: 275px
+    height: 130px
+    background-color: #e6e6e6
+
+    &::after
+      content: ""
+      position: absolute
+      right: -100px
+      border: 130px solid transparent
+      border-top: 0px solid transparent
+      border-right: 0px solid transparent
+      border-left: 100px solid #e6e6e6
+
+  .header__maroon
+    position: absolute
+    right: 0px
+    bottom: -50px
+    width: 615px
+    height: 50px
+    background-color: #663333
+
+    &::before
+      content: ""
+      position: absolute
+      left: -38px
+      border: 50px solid transparent
+      border-bottom: 0px solid transparent
+      border-left: 0px solid transparent
+      border-right: 38px solid #663333

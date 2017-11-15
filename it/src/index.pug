@@ -1,0 +1,17 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html(lang="ru")
+  head
+    include pug/metatags.pug
+    +title('Главная')
+    include pug/styles.pug
+  body
+    include pug/blocks/header.pug
+    include pug/blocks/main.pug
+    include pug/blocks/footer.pug
+    include pug/components/form-feedback.pug
+    include pug/components/overlay.pug
+
+    include pug/script.pug

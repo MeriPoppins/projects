@@ -1,0 +1,147 @@
+.price__breadcrumb
+  margin-top: 25px
+  margin-bottom: 35px
+
+  &--list
+    display: flex
+    color: #000000
+
+    &-link
+      color: #663333
+
+    & li
+      margin: 0px 5px
+
+      &:first-child
+        margin-left: 0px
+
+.tab-nav
+  position: relative
+  display: flex
+  width: 670px
+  color: #fffefe
+  background-color: #663333
+  margin-top: 50px
+  margin-bottom: 45px
+
+  &::after
+    content: ""
+    position: absolute
+    top: 0px
+    right: -28px
+    border: 41px solid transparent
+    border-top: 0px solid transparent
+    border-right: 0px solid transparent
+    border-left: 28px solid #663333
+    z-index: 1
+
+  & li
+    width: 110px
+    color: #fffefe
+    margin-right: 30px
+    cursor: pointer
+
+    &:last-child
+      margin-right: 0px
+
+    &.select a
+      position: relative
+      background-color: #d12c2c
+
+      &::after
+        content: ""
+        position: absolute
+        top: 0px
+        right: -28px
+        border: 41px solid transparent
+        border-top: 0px solid transparent
+        border-right: 0px solid transparent
+        border-left: 28px solid #d12c2c
+        z-index: 10
+
+    & a
+      display: inline-block
+      width: 70px
+      color: #fffefe
+      padding: 9px 20px
+
+  & .tab-nav .active
+    display: inline-block
+
+.tab-panels
+  position: relative
+  height: 575px
+
+  .price__item
+    position: absolute
+    top: 0
+    left: 0
+    overflow: hidden
+
+    &--auto
+      display: flex
+      margin-top: 35px
+
+      &-img
+        width: 470px
+        height: 340px
+
+      &-img1
+        background: url("../images/price 1.png") no-repeat
+
+      &-img2
+        background: url("../images/price 2.png") no-repeat
+
+      &-img3
+        background: url("../images/price 3.png") no-repeat
+
+      &-img4
+        background: url("../images/price 4.png") no-repeat
+
+      &-description
+        display: flex
+        flex-direction: column
+
+        & .columns
+          position: relative
+          width: 416px
+          height: 286px
+          display: flex
+          margin-left: 20px
+          padding: 27px
+          background-color: #e6e6e6
+
+          &::before
+            content: ""
+            position: absolute
+            top: 0px
+            left: 0px
+            border: 23px solid transparent
+            border-top: 0px solid transparent
+            border-right: 0px solid transparent
+            border-left: 23px solid #ffffff
+
+          &::after
+            content: ""
+            position: absolute
+            bottom: 0px
+            right: 0px
+            border: 23px solid transparent
+            border-bottom: 0px solid transparent
+            border-left: 0px solid transparent
+            border-right: 23px solid #ffffff
+
+          &__item:first-child
+            margin-right: 45px
+
+        .request
+          margin-top: 50px
+          margin-bottom: 90px
+          margin-left: 20px
+          color: #518a32
+          border: 1px solid #518a32
+
+      &-text
+        @include fonts-settings-price
+        margin-top: -5px
+        margin-bottom: 17px

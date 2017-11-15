@@ -1,0 +1,19 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html(lang="ru")
+  head
+    include pug/metatags.pug
+    +title('Прайс')
+    include pug/styles.pug
+  body
+    include pug/blocks/header.pug
+    .wrapper
+      include pug/blocks/price__content.pug
+      include pug/blocks/footer.pug
+    include pug/components/form-feedback.pug
+    include pug/components/form-request.pug
+    include pug/components/overlay.pug
+
+    include pug/script.pug

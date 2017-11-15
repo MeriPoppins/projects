@@ -1,0 +1,92 @@
+.features-bg
+  position: relative
+  height: 400px
+  background-color: #663333
+
+  &__line--white, &__line--gray
+    position: absolute
+    top: 0px
+    left: 0px
+    width: 26%
+    height: 25px
+    background-color: #ffffff
+
+  &__line--gray
+    left: 74%
+    top: 465px
+    background-color: #e6e6e6
+
+  & h1
+    color: #ffffff
+
+  .features
+    position: relative
+    display: flex
+    justify-content: space-between
+    margin-top: 45px
+
+    & .line--white
+      position: absolute
+      top: -199px
+      left: 0px
+      width: 285px
+      height: 25px
+      background-color: #ffffff
+
+      &::after
+        content: ""
+        position: absolute
+        right: -17px
+        border: 25px solid transparent
+        border-top: 0px solid transparent
+        border-right: 0px solid transparent
+        border-left: 17px solid #ffffff
+
+    & .line--gray
+      position: absolute
+      top: 266px
+      right: 0px
+      width: 285px
+      height: 25px
+      background-color: #e6e6e6
+
+      &::after
+        content: ""
+        position: absolute
+        left: -17px
+        border: 25px solid transparent
+        border-bottom: 0px solid transparent
+        border-left: 0px solid transparent
+        border-right: 17px solid #e6e6e6
+
+    &__item
+      position: relative
+      width: 225px
+      color: #ffffff
+      text-align: center
+      padding-top: 85px
+
+      &::before
+        content: ""
+        position: absolute
+        top: 0px
+        left: 80px
+        width: 70px
+        height: 60px
+        background: url("../images/sprite.png")
+        background-repeat: no-repeat
+
+      & h2
+        color: #ffffff
+
+    & .features__item--1::before
+      background-position: 0 -126px
+
+    & .features__item--2::before
+      background-position: 0 -396px
+
+    & .features__item--3::before
+      background-position: 0 -752px
+
+    & .features__item--4::before
+      background-position: 0 -216px

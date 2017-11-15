@@ -1,0 +1,50 @@
+.autopark
+  display: flex
+  flex-direction: column
+  padding-top: 50px
+  padding-bottom: 40px
+
+  &__row
+    display: flex
+    justify-content: space-between
+    margin-bottom: 50px
+
+  &__item--text
+    display: flex
+    color: #fefefe
+
+    &-red
+      position: relative
+      width: 80px
+      padding: 5px 0px
+      padding-left: 20px
+      background-color: #d12c2c
+
+      &::after
+        content: ""
+        position: absolute
+        top: 0px
+        right: -18px
+        border: 34px solid transparent
+        border-top: 0px solid transparent
+        border-right: 0px solid transparent
+        border-left: 18px solid #d12c2c
+        z-index: 10
+
+    &-maroon
+      position: relative
+      width: 205px
+      padding: 5px 0px
+      padding-left: 35px
+      background-color: #663333
+      z-index: 1
+
+      &::after
+        content: ""
+        position: absolute
+        top: 0px
+        right: -18px
+        border: 34px solid transparent
+        border-top: 0px solid transparent
+        border-right: 0px solid transparent
+        border-left: 18px solid #663333

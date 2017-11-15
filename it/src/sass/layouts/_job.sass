@@ -1,0 +1,59 @@
+.job--bg
+  height: 375px
+  background-color: #e6e6e6
+
+.job
+  display: flex
+  justify-content: space-between
+  margin-top: 45px
+
+  &__item
+    position: relative
+    width: 220px
+    text-align: center
+    padding-top: 85px
+
+    &--header-link
+      color: #518a32
+
+    &::before
+      content: ""
+      position: absolute
+      top: 0px
+      width: 70px
+      height: 60px
+      background: url("../images/sprite.png")
+      background-repeat: no-repeat
+
+    &:nth-child(1)::before
+      background-position: 0 -589px
+      left: 90px
+
+    &:nth-child(2)::before
+      background-position: 0 -306px
+      left: 90px
+
+    &:nth-child(3)::before
+      background-position: 0 -679px
+      top: 20px
+      left: 75px
+
+    &:nth-child(4)::before
+      background-position: 0 -40px
+      top: 8px
+      left: 80px
+
+    &::after
+      content: ""
+      position: absolute
+      right: -20px
+      top: 35px
+      width: 20px
+      height: 10px
+      background: url("../images/sprite.png")
+      background-repeat: no-repeat
+      background-position: 0 0
+
+    &:nth-child(4)::after
+      width: 0px
+      height: 0px

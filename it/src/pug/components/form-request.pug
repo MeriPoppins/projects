@@ -1,0 +1,20 @@
+.popap.popap__request
+  .popap__header
+    .popap__header--maroon
+    p.popap__header--name Оставить заявку
+    p.button__close--text.request__close--text Закрыть
+    button.button__close(type="button")
+  form.form
+    label.form__label Ваше имя
+    input.form__input(type="text")
+    label.form__label Телефон
+    input.form__input(type="tel")
+    label.form__label Краткая информация
+    textarea.form__textarea(rows="3")
+    label.form__checkbox
+      input.form__checkbox--input(type="checkbox")
+      span.form__checkbox--checked
+      span.form__checkbox--text.
+        Согласен на обработку<br>
+        персональных данных
+    button.button.form__button Отправить

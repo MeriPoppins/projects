@@ -1,0 +1,87 @@
+.section-2
+  padding-top: 75px
+
+.service
+  display: flex
+  flex-direction: column
+
+  &__header
+    display: flex
+    justify-content: space-between
+
+    &--banner
+      position: relative
+
+      &-text
+        position: absolute
+        top: 240px
+        width: 310px
+        color: #ffffff
+        padding: 10px 0
+        padding-left: 20px
+        background-color: #518a32
+
+        &::after
+          content: ""
+          position: absolute
+          top: 0px
+          right: -28px
+          border: 45px solid transparent
+          border-top: 0px solid transparent
+          border-right: 0px solid transparent
+          border-left: 28px solid #518a32
+
+    & h1
+      height: 28px
+      margin-top: 35px
+
+  &__items
+    display: flex
+    justify-content: space-between
+    margin-top: 30px
+
+    &--item
+      display: flex
+      flex-direction: column
+
+      &-img
+        width: 300px
+        height: 180px
+        background-image: url("../images/apartment-1.jpg")
+        cursor: pointer
+
+        &:hover
+          background-image: url("../images/apartment-2.jpg")
+
+      &-text
+        position: relative
+        width: 170px
+        color: #ffffff
+        padding: 5px 0px
+        padding-left: 20px
+        background-color: #518a32
+
+        &::after
+          content: ""
+          position: absolute
+          top: 0px
+          right: -17px
+          border: 34px solid transparent
+          border-top: 0px solid transparent
+          border-right: 0px solid transparent
+          border-left: 17px solid #518a32
+
+      &:nth-child(2) .service__items--item-img
+        background-image: url("../images/office-1.jpg")
+
+        &:hover
+          background-image: url("../images/office-2.jpg")
+
+      &:nth-child(3) .service__items--item-img
+        background-image: url("../images/home-1.jpg")
+
+        &:hover
+          background-image: url("../images/home-2.jpg")
+
+  &__text
+    margin: 85px 0px
